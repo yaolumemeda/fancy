@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fancy.order.dal.mapper.OrderMapper">
+
+    <insert id="addOrder" parameterType="com.fancy.order.dal.dao.OrderDao">
+        insert into `order`(oid,order_create_time,order_update_time,status,address,`name`,telephone,
+        `count`,spuId,userId)
+		 values
+		 (#{oid},#{orderCreateTime},#{orderUpdateTime},#{status},#{address},#{name},#{telephone},
+		 #{count},#{spuId},#{userId})
+
+    </insert>
+
+</mapper>

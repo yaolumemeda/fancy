@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: order
+eureka:
+  client:
+    service-url:
+      defaultZone: http://188.131.134.90:8761/eureka/
+  instance:
+    prefer-ip-address: true
